@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry</title>
+    <link rel="stylesheet" href="geometry-style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="container square">
+            <div class="header-section">
+                <div class="title">
+                    <div class="square-figure"></div>
+                    <h2>
+                        Square
+                    </h2>
+                </div> 
+                    <span class="description">
+                        How long is each side of your square? (cm)
+                    </span> 
+            </div>
+            <input type="number" name="" placeholder="Enter the value" id="centimeter">          
+            <div class="buttons-container">
+                <button class="primary-button" onclick="calcularPerimetroCuadrado()">
+                    <p>
+                        Get perimeter
+                    </p>
+                </button>
+                <button class="primary-button" onclick="calcularAreaCuadrado()">
+                    <p>
+                        Get Area
+                    </p>
+                </button>
+            </div>
+            <div class="container-result">
+                <p>Result</p>
+                <span class="description" id="result">00</span>
+            </div>
+        </div>
+        <div class="container circle">
+            <div class="header-section">
+                <div class="title">
+                    <div class="circle-figure"></div>
+                    <h2>
+                        Circle
+                    </h2>
+                </div> 
+                    <span class="description">
+                        What is the radio of your circle?
+                    </span> 
+            </div>
+            <input type="number" name="" placeholder="Enter the value" id="centimeter-circle">          
+            <div class="buttons-container">
+                <button class="primary-button" onclick="calcularPerimetroCirculo()">
+                    <p>
+                        Get perimeter
+                    </p>
+                </button>
+                <button class="primary-button" onclick="calcularAreaCirculo()">
+                    <p>
+                        Get Area
+                    </p>
+                </button>
+            </div>
+            <div class="container-result">
+                <p>Result</p>
+                <span class="description" id="result-circle">00</span>
+            </div>
+        </div>
+        <div class="container triangle">
+            <div class="header-section">
+                <div class="title">
+                    <div class="triangle-figure"><img src="./asset/triangle.svg" alt="Triangle icon" srcset=""></div>
+                    <h2>
+                        Triangle
+                    </h2>
+                </div> 
+                    <span class="description">
+                        What are the measurements of your triangle? (cm)
+                    </span> 
+            </div>
+            <input type="number" name="" placeholder="Enter the value for side A" id="triangle-side-a" required> 
+            <input type="number" name="" placeholder="Enter the value for side B" id="triangle-side-b" required>
+            <input type="number" name="" placeholder="Enter the value for base" id="triangle-base" required>
+            <input type="number" name="" placeholder="Enter the value for height" id="triangle-height" required>         
+            <div class="buttons-container">
+                <button class="primary-button" onclick="calcularPerimetroTriangulo()">
+                    <p>
+                        Get perimeter
+                    </p>
+                </button>
+                <button class="primary-button" onclick="calcularAreaTriangulo()">
+                    <p>
+                        Get Area
+                    </p>
+                </button>
+            </div>
+            <div class="container-result">
+                <p>Result</p>
+                <span class="description" id="triangle-result">00</span>
+            </div>
+        </div>
+    </div>
+    <script src="./figuras.js"></script>
+</body>
+</html>

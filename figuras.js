@@ -46,18 +46,70 @@ function areaCirculo(radio){
 
 console.groupEnd();
 
-//Aqui interactuamos con HTML
+//Aqui interactuamos con HTML y el cuadrado
 function calcularAreaCuadrado(){
-    const input = document.getElementById("inputCuadrado");
+    const input = document.getElementById("centimeter");
     const value = input.value;
+
+    const result = document.getElementById("result");
 
     const area = areaCuadrado(value);
-    alert(area);
+    result.innerHTML = "Area: " + area + " cm";
 }
 function calcularPerimetroCuadrado(){
-    const input = document.getElementById("inputCuadrado");
+    const input = document.getElementById("centimeter");
     const value = input.value;
 
+    const result = document.getElementById("result");
+
     const perimetro = perimetroCuadrado(value);
-    alert(perimetro);
+    result.innerHTML = "Perimeter: " + perimetro + " cm";
+}
+//Interactuamos con HTML y el circulo
+function calcularAreaCirculo(){
+    const input = document.getElementById("centimeter-circle");
+    const value = input.value;
+
+    const result = document.getElementById("result-circle");
+
+    const area = areaCirculo(value);
+    result.innerHTML = "Area: " + area.toFixed(2) + " cm";
+}
+function calcularPerimetroCirculo(){
+    const input = document.getElementById("centimeter-circle");
+    const value = input.value;
+
+    const result = document.getElementById("result-circle");
+
+    const area = perimetroCirculo(value);
+    result.innerHTML = "Perimetro: " + area.toFixed(2) + " cm";
+}
+
+//Interacción con el HTML Triángulo
+function calcularAreaTriangulo(){
+    const inputBase = document.getElementById("triangle-base");
+    const baseValue = inputBase.value;
+
+    const inputHeight = document.getElementById("triangle-height");
+    const heightValue = inputHeight.value;
+
+    const result = document.getElementById("triangle-result");
+
+    const area = areaTriangulo(baseValue, heightValue);
+    result.innerHTML = "Area: " + area.toFixed(2) + " cm";
+}
+function calcularPerimetroTriangulo(){
+    const inputBase = document.getElementById("triangle-base");
+    const baseValue = inputBase.value;
+
+    const inputSideA = document.getElementById("triangle-side-a");
+    const sideA = inputSideA.value;
+
+    const inputSideB = document.getElementById("triangle-side-b");
+    const sideB = inputSideB.value;
+
+    const result = document.getElementById("triangle-result");
+
+    const area = perimetroTriangulo(sideA, sideB, baseValue);
+    result.innerHTML = "Perimetro: " + area + " cm";
 }
