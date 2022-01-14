@@ -74,11 +74,14 @@ body{
     border: solid 4px var(--accent-main);
 }
 .triangle-figure{
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.triangle-figure img{
+    width: 100%;
 }
 .description {
     height: 24px;
