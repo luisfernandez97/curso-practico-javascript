@@ -14,7 +14,11 @@ function calculateDiscount(){
 
     const finalPrice = discountCalculator(productPrice, discount);
     console.log (finalPrice);
-    resultContainer.innerHTML = "You'll pay " + finalPrice;
+    if (finalPrice <= 0){
+        resultContainer.innerHTML = "You won't pay anything.";
+    }else{
+        resultContainer.innerHTML = "You'll pay " + finalPrice;
+    }
 }
 
 function discountCalculator(price, discount){
