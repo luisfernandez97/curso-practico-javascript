@@ -113,3 +113,11 @@ function calcularPerimetroTriangulo(){
     const area = perimetroTriangulo(sideA, sideB, baseValue);
     result.innerHTML = "Perimetro: " + area + " cm";
 }
+
+//Triángulo isóceles
+function isocelesTriangle(sides, bases){
+    const side = sides * sides;
+    const base = bases * bases;
+    const height = Math.sqrt(side - (base / 4) );
+    return "La altura del triángulo isóceles es " +  height + " cm.";
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Porcentajes y descuentos</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container-discounts">
+            <div class="header-section">
+                <div class="title">
+                    <div class="icon-img">
+                        <img src="./asset/cart-icon.svg" alt="Shopping cart">
+                    </div>
+                    <h2>
+                        Discounts calculator
+                    </h2>
+                </div> 
+                    <span class="description">
+                        Let's calculate your discounts
+                    </span> 
+            </div>
+            <input type="number" name="" placeholder="Enter the original price of your product" id="originalPrice"> 
+            <input type="number" name="" placeholder="Enter the discount of your product" id="discountOffer">         
+            <div class="buttons-container">
+                <button class="primary-button" onclick="calculateDiscount()">
+                    <p>
+                        Calculate
+                    </p>
+                </button>
+            </div>
+            <div class="container-result">
+                <p>Result</p>
+                <span class="description" id="result">00</span>
+            </div>
+        </div>
+
+        
+    </div>
+    <script src="./discounts.js"></script>
+</body>
+</html>
