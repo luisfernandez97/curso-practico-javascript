@@ -187,7 +187,7 @@ input {
 @media (max-width: 992px){
     .main-container{
         flex-direction: column;
-        padding: 50px 20px;
+        padding: 50px 20px 200px;
     }
     .container{
         width: 100%;
