@@ -5,7 +5,7 @@
     --DP06-color: #2E2E2E;
     --accent-main: #03dac6;
     --white-color: #fbfbfb;
-    --font-family: Poppins;
+    --font-family: 'Poppins', sans-serif;
     --H2-font-size: 1.5em;
     --body-font-size: 1em;
 }
@@ -13,6 +13,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: var(--DP00-color);
 }
 .main-container {
     display: flex;
@@ -187,7 +188,7 @@ input {
 @media (max-width: 992px){
     .main-container{
         flex-direction: column;
-        padding: 50px 20px 200px;
+        padding: 50px 20px;
     }
     .container{
         width: 100%;
